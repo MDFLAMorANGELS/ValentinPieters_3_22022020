@@ -3,4 +3,9 @@ html {
   margin: 0;
 }
 
+body {
+  width: 100%;
+  max-width: 599px;
+}
+
 /*# sourceMappingURL=style.css.map */

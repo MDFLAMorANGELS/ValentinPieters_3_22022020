@@ -1,11 +1,24 @@
-html {
+html, body {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
-body {
-  width: 100%;
-  max-width: 599px;
+.restaurants_card_image {
+  width: 100px;
 }
+
+.restaurants_card_image {
+  width: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.title {
+  font-family: shrikhand;
+  text-align: center;
+  font-weight: 400;
+}
+
 
 /*# sourceMappingURL=style.css.map */

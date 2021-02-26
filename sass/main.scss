@@ -1,8 +1,26 @@
-html{
+html, body{
     padding: 0;
     margin: 0;
+    width: 100%;
 }
-body{
-    width: 100%; 
-    max-width: 599px;
+
+.restaurants_card_image {
+    width: 100px;
+}
+
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$font-heading: shrikhand;
+$font-text:roboto;
+
+.restaurants_card_image {
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title {
+    font-family: $font-heading;
+    text-align: center;
 }

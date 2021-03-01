@@ -21,7 +21,7 @@
             <h2 class="info__title">Réservez le menu qui vous convient</h2>
             <p class="info__text">Découvrez les restaurants d'exception, sélétionnés par nos soins.</p>
             <button class="info__button">
-                Explorer nos restaurants
+                <span>Explorer nos restaurants</span>
             </button>
         </section>
     </header>
@@ -30,20 +30,20 @@
             Fonctionnement
         </h2>
         <ul class="working__step">
-            <li class="step step1">
-                <span class="numbers">1</span>
+            <li class="step">
+                <span class="step__numbers">1</span>
                 <i class="fas fa-mobile-alt"></i>
-                <p class="step1__text">choisissez un restaurant</p>
+                <p class="step__text">choisissez un restaurant</p>
             </li>
-            <li class="step step2">
-                <span class="numbers">2</span>
+            <li class="step">
+                <span class="step__numbers">2</span>
                 <i class="fas fa-list-ul"></i>
-                <p class="step2__text">Composez votre menu</p>
+                <p class="step__text">Composez votre menu</p>
             </li>
-            <li class="step step3">
-                <span class="numbers">3</span>
+            <li class="step">
+                <span class="step__numbers">3</span>
                 <i class="fas fa-store"></i>
-                <p class="step3__text">Dégustez au restaurant</p>
+                <p class="step__text">Dégustez au restaurant</p>
             </li>
         </ul>
     </nav>
@@ -51,7 +51,8 @@
         <h2 class="restaurants__title">
             Restaurants
         </h2>
-        <a href="#" class="restaurants__card new">
+    <div class="restaurants__card">
+        <a href="#">
             <img class="restaurants__card__image" src="./images/restaurants/image1.jpg" alt="restaurants">
             <div class="card__text">
                 <h2 class="restaurants__card__title">
@@ -65,7 +66,9 @@
                 <i class="far fa-heart"></i>
             </div>
         </a>
-        <a href="#" class="restaurants__card new">
+    </div>
+    <div class="restaurants__card">
+        <a href="#">
             <img class="restaurants__card__image" src="./images/restaurants/image2.jpg" alt="restaurants">
             <div class="card__text">
                 <h2 class="restaurants__card__title">
@@ -79,7 +82,9 @@
                 <i class="far fa-heart"></i>
             </div>
         </a>
-        <a href="#" class="restaurants__card">
+    </div>
+    <div class="restaurants__card">
+        <a href="#">
             <img class="restaurants__card__image" src="./images/restaurants/image3.jpg" alt="restaurants">
             <div class="card__text">
                 <h2 class="restaurants__card__title">
@@ -93,7 +98,9 @@
                 <i class="far fa-heart"></i>
             </div>
         </a>
-        <a href="#" class="restaurants__card">
+    </div>
+    <div class="restaurants__card">
+        <a href="#">
             <img class="restaurants__card__image" src="./images/restaurants/image4.jpg" alt="restaurants">
             <div class="card__text">
                 <h2 class="restaurants__card__title">
@@ -107,17 +114,20 @@
                 <i class="far fa-heart"></i>
             </div>
         </a>
+    </div>
     </main>
     <footer class="footer">
         <h2 class="footer__title">
             ohmyfood
         </h2>
-        <ul>
+        <ul class="footer__section">
             <li>
-                <i class="fas fa-utensils">Proposer un restaurant</i>
+                <span class="fas fa-utensils"></span>
+                <span>Proposer un restaurant</span>
             </li>
             <li>
-                <i class="fas fa-hands-helping">Devenir partenaire</i>
+                <span class="fas fa-hands-helping"></span>
+                <span>Devenir partenaire</span>
             </li>
             <li>
                 Mentions légales

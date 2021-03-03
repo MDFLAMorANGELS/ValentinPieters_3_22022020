@@ -137,6 +137,9 @@ body {
   font-size: 20px;
   margin-bottom: 5%;
 }
+.restaurants__card .like i {
+  color: #9356DC;
+}
 .restaurants a {
   text-decoration: none;
   color: black;

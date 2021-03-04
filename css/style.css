@@ -26,6 +26,17 @@ body {
   object-fit: cover;
   object-position: center;
   width: 100%;
+  max-height: 300px;
+}
+
+h3 {
+  margin: 3%;
+  font-weight: 600;
+}
+
+p {
+  font-weight: 300;
+  margin: 3%;
 }
 
 .menu {
@@ -38,7 +49,7 @@ body {
 .menu__heading {
   display: flex;
   justify-content: space-between;
-  margin: 0 2% 10% 2%;
+  margin: 0 4% 10% 4%;
 }
 .menu__heading h2 {
   margin: 0;
@@ -48,6 +59,92 @@ body {
 .menu__heading i {
   margin-top: 5px;
   font-size: 25px;
+}
+
+.entre__title {
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+  padding-bottom: 1%;
+  font-weight: 300;
+  margin-top: 10%;
+}
+.entre__content {
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+  margin: 5% 0 5% 0;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.entre__content__title {
+  width: 85%;
+}
+.entre__content__prix {
+  margin-top: 8%;
+}
+
+.plat__title {
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+  padding-bottom: 1%;
+  font-weight: 300;
+  margin-top: 10%;
+}
+.plat__content {
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+  margin: 5% 0 5% 0;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.plat__content__title {
+  width: 85%;
+}
+.plat__content__prix {
+  margin-top: 8%;
+}
+
+.desserts__title {
+  border-bottom: solid 3px #99E2D0;
+  width: 10%;
+  padding-bottom: 1%;
+  font-weight: 300;
+  margin-top: 10%;
+}
+.desserts__content {
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+  margin: 5% 0 5% 0;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+.desserts__content__title {
+  width: 85%;
+}
+.desserts__content__prix {
+  margin-top: 8%;
+}
+
+.commande__buton {
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 1px 5px black;
+  border: none;
+  border-radius: 10rem;
+  color: white;
+  padding: 18px 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 60%;
+  margin: 10% 0% 20% 20%;
 }
 
 .location {
@@ -81,7 +178,6 @@ body {
   color: white;
   padding: 18px 35px;
   text-align: center;
-  display: inline-block;
   font-size: 16px;
   font-weight: 600;
 }

@@ -5,6 +5,38 @@ $color-background:#f2f2f2;
 $font-heading: shrikhand;
 $font-text:roboto;
 
+@mixin bouton {
+        background: linear-gradient($color-secondary,$color-primary );
+        box-shadow: 0px 1px 5px black;
+        border: none;
+        border-radius: 10rem;
+        color: white;
+        padding: 18px 35px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+}
+
+@mixin section_menu {
+        border-bottom: solid 3px $color-tertiary;
+        width: 10%;
+        padding-bottom: 1%;
+        font-weight: 300;
+        margin-top: 10%;
+}
+
+@mixin card_menu {
+            display: flex;
+            border-radius: 1rem;
+            box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+            margin: 5% 0 5% 0;
+            background-color: $color-background;
+            text-decoration: none;
+            color: black;
+            align-items: center;
+}
+
+
 html, body{
     padding: 0;
     margin: 0;
@@ -32,8 +64,17 @@ body{
             object-fit: cover;
             object-position: center;
             width: 100%;
+            max-height: 300px;
         }
     }
+}
+h3 {
+    margin: 3%;
+    font-weight: 600;
+}
+p {
+    font-weight: 300;
+    margin: 3%;
 }
 
 .menu {
@@ -45,7 +86,7 @@ body{
     &__heading {
         display: flex;
         justify-content: space-between;
-        margin: 0 2% 10% 2%;
+        margin: 0 4% 10% 4%;
         & h2 {
             margin: 0;
             font-family: $font-heading;
@@ -58,6 +99,56 @@ body{
     }
 }
 
+.entre {
+        &__title {
+            @include section_menu ;
+        }
+        &__content {
+            @include card_menu ;
+            &__title {
+                width: 85%;
+            }
+            &__prix {
+                margin-top: 8%;
+            }
+    }
+}
+
+.plat {
+    &__title {
+            @include section_menu ;
+        }
+        &__content {
+            @include card_menu ;
+            &__title {
+                width: 85%;
+            }
+        &__prix {
+            margin-top: 8%;
+        }
+    }
+}
+
+.desserts {
+    &__title {
+        @include section_menu ;
+    }
+    &__content {
+        @include card_menu ;
+        &__title {
+            width: 85%;
+        }
+        &__prix {
+            margin-top: 8%;
+        }
+    }
+}
+
+.commande__buton {
+    @include bouton;
+    width: 60%;
+    margin: 10% 0% 20% 20% ;
+}
 
 .location {
     display: flex;
@@ -82,16 +173,7 @@ body{
         margin-bottom: 10%;
     }
     &__button {
-        background: linear-gradient($color-secondary,$color-primary );
-        box-shadow: 0px 1px 5px black;
-        border: none;
-        border-radius: 10rem;
-        color: white;
-        padding: 18px 35px;
-        text-align: center;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: 600;
+        @include bouton
     }
 }
 

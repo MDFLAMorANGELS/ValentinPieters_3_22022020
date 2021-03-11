@@ -1,0 +1,184 @@
+.restaurants {
+    background-color: $color-background;
+    padding: 5% 5% 6% 5%;
+    @include tablette-only {
+        padding: 5% 2% 5% 2%;
+    }
+    &__content {
+        @include tablette-only{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__card {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        color: black;
+        background-color: #FFF;
+        margin-bottom: 10%;
+        box-shadow: 0 0px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+        @include tablette-only{
+            width: 350px;
+            margin: 2%;
+        }
+        @include desktop{
+            width: 450px;
+        }
+        &__image {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+            height: 13rem;
+            position: relative;
+            @include tablette-only{
+                height: 16em;
+            }
+        }
+        & .new{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color:$color-tertiary;
+            color: #008766;
+            padding: 1%;
+            border-radius: 5px;
+        }
+        &__body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5%;
+        }
+        &__title {
+            margin: 0;
+        }
+        &__location {
+            margin: 0 0 10% 0;
+        }
+        .like {
+            font-size: 20px;
+            margin-bottom: 5%;
+            & i {
+                color: black;
+
+            }
+        }
+    }
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+} 
+.menu {
+    background-color: #f2f2f2;
+    position: relative;
+    bottom: 60px;
+    padding: 10% 3% 3% 3%;
+    border-radius: 3rem 3rem 0 0;
+    @include desktop{
+        padding: 3% 0 0 0;
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 4% 10% 4%;
+        & h2 {
+            margin: 0;
+            font-family: $font-heading;
+            font-weight: 500;
+        }
+        & i {
+            margin-top: 5px;
+            font-size: 25px;
+        }
+    }
+}
+.dish{
+    @include desktop{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.entre {
+        @include desktop{
+            width: 30%;
+        }
+        &__title {
+            @include section_menu ;
+        }
+        &__content {
+            @include card_menu ;
+            &__title {
+                width: 85%;
+            }
+            &__prix {
+                margin-top: 8%;
+            }
+    }
+}
+.plat {
+    @include desktop{
+        width: 30%;
+    }
+    &__title {
+            @include section_menu ;
+        }
+        &__content {
+            @include card_menu ;
+            &__title {
+                width: 85%;
+            }
+        &__prix {
+            margin-top: 8%;
+        }
+    }
+}
+.desserts {
+    @include desktop{
+        width: 30%;
+    }
+    &__title {
+        @include section_menu ;
+    }
+    &__content {
+        @include card_menu ;
+        &__title {
+            width: 85%;
+        }
+        &__prix {
+            margin-top: 8%;
+        }
+    }
+}
+.location {
+    display: flex;
+    background-color: #c0c0c067;
+    justify-content: center;
+    border-top: #d5d5d5 3px solid;
+    & i{
+        margin-right: 1%;
+        margin-top: 1.7%;
+        font-size: 120%;
+    }
+}
+.info {
+    background-color: $color-background;
+    padding: 10% 10% 15% 10%;
+    text-align: center;
+    @include tablette-only {
+        padding: 5% 0 5% 0;
+    }
+    &__title{
+        margin: 0;
+    }
+    &__text{
+        margin-bottom: 10%;
+    }
+    &__button {
+        @include bouton
+    }
+}

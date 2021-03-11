@@ -1,0 +1,30 @@
+.header {
+    background-color: #FFF;
+    .title {
+        font-family: $font-heading;
+        text-align: center;
+        padding: 1.5%;
+        margin: 0;
+        font-weight: 600;
+        background-color: #fff;
+        &__arrows {
+            font-size: 1.3em;
+            color: #5a5a5a;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        &__img {
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            max-height: 300px;
+            @include tablette-only{
+                max-height: 400px;
+            }
+            @include desktop{
+                max-height: 450px;
+            }
+        }
+    }
+}

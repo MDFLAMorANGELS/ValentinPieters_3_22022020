@@ -317,6 +317,7 @@ p {
   text-decoration: none;
   color: black;
   align-items: center;
+  justify-content: space-between;
 }
 .entre__content__title {
   width: 85%;
@@ -346,6 +347,7 @@ p {
   text-decoration: none;
   color: black;
   align-items: center;
+  justify-content: space-between;
 }
 .plat__content__title {
   width: 85%;
@@ -375,6 +377,7 @@ p {
   text-decoration: none;
   color: black;
   align-items: center;
+  justify-content: space-between;
 }
 .desserts__content__title {
   width: 85%;
@@ -421,6 +424,31 @@ p {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+}
+
+.box {
+  width: 80px;
+  height: 100px;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 800ms ease-in-out;
+  position: relative;
+}
+.box i {
+  color: #FFF;
+  transition: transform 900ms ease-in-out;
+}
+
+.entre__content:hover .box {
+  transform: scaleX(1);
+}
+.entre__content:hover .box i {
+  transform: rotate(1turn);
 }
 
 .commande__buton {

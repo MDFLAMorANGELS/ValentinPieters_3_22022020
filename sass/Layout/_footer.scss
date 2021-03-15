@@ -2,6 +2,12 @@
     background-color:#353535;
     color: white;
     padding: 8%;
+    @include laptop{
+        padding: 5%;
+    }
+    @include desktop{
+        padding: 3%;
+    }
     &__title {
         margin: 0 0 3% 0;
         font-family: $font-heading;
@@ -12,6 +18,10 @@
         margin: 0;
         padding: 0;
         list-style: none;
+        @include laptop{
+            display: flex;
+            justify-content: space-around;
+        }
         & li {
             margin-bottom: 3%;
             & a {

@@ -74,6 +74,16 @@ p {
   color: white;
   padding: 8%;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 3%;
+  }
+}
 .footer__title {
   margin: 0 0 3% 0;
   font-family: shrikhand;
@@ -84,6 +94,12 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer__section {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 .footer__section li {
   margin-bottom: 3%;
@@ -279,6 +295,11 @@ p {
   justify-content: space-between;
   margin: 0 4% 10% 4%;
 }
+@media screen and (min-width: 1024px) {
+  .menu__heading {
+    margin: 0 5% 0 5%;
+  }
+}
 .menu__heading h2 {
   margin: 0;
   font-family: shrikhand;
@@ -444,10 +465,10 @@ p {
   transition: transform 900ms ease-in-out;
 }
 
-.entre__content:hover .box {
+.entre__content:focus .box {
   transform: scaleX(1);
 }
-.entre__content:hover .box i {
+.entre__content:focus .box i {
   transform: rotate(1turn);
 }
 
@@ -463,6 +484,11 @@ p {
   font-weight: 600;
   width: 60%;
   margin: 10% 0% 0% 20%;
+}
+@media screen and (min-width: 1024px) {
+  .commande__buton {
+    margin: 3% 0 0 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

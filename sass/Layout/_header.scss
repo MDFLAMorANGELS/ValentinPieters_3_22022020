@@ -22,7 +22,7 @@
             @include tablette-only{
                 max-height: 400px;
             }
-            @include desktop{
+            @include laptop{
                 max-height: 450px;
             }
         }

@@ -24,7 +24,7 @@
             width: 350px;
             margin: 2%;
         }
-        @include desktop{
+        @include laptop{
             width: 450px;
         }
         &__image {
@@ -79,13 +79,16 @@
     bottom: 60px;
     padding: 10% 3% 3% 3%;
     border-radius: 3rem 3rem 0 0;
-    @include desktop{
+    @include laptop{
         padding: 3% 0 0 0;
     }
     &__heading {
         display: flex;
         justify-content: space-between;
         margin: 0 4% 10% 4%;
+        @include laptop{
+            margin: 0 5% 0 5%;
+        }
         & h2 {
             margin: 0;
             font-family: $font-heading;
@@ -98,13 +101,13 @@
     }
 }
 .dish{
-    @include desktop{
+    @include laptop{
         display: flex;
         justify-content: space-around;
     }
 }
 .entre {
-        @include desktop{
+        @include laptop{
             width: 30%;
         }
         &__title {
@@ -121,7 +124,7 @@
     }
 }
 .plat {
-    @include desktop{
+    @include laptop{
         width: 30%;
     }
     &__title {
@@ -138,7 +141,7 @@
     }
 }
 .desserts {
-    @include desktop{
+    @include laptop{
         width: 30%;
     }
     &__title {
@@ -204,7 +207,7 @@
     }
 }
 
-.entre__content:hover{
+.entre__content:focus{
         & .box{
                 transform: scaleX(1);
                 & i {

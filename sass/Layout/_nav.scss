@@ -7,7 +7,7 @@
         list-style: none;
         padding:0 5%;
         margin: 0;
-        @include desktop{
+        @include laptop{
             display: flex;
             justify-content: space-around;
         }
@@ -24,7 +24,7 @@
     &:hover{
         background-color: #f5edff;
     }
-    @include desktop{
+    @include laptop{
         margin: 3%;
         width: 100%;
         flex-direction: column;
@@ -45,7 +45,7 @@
         border-radius: 50%;
         margin-left: -1rem;
         margin-right: 1rem;
-        @include desktop{
+        @include laptop{
             margin: -0.5rem 0 0 0;
         }
     }
@@ -53,7 +53,7 @@
         color: #555555;
         margin-right: 10%;
         font-size: 20px;
-        @include desktop{
+        @include laptop{
             margin: 60px 0 0 0;
         }
     }

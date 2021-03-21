@@ -7,6 +7,7 @@ body {
   width: 100%;
   font-family: roboto;
   font-weight: 500;
+  font-size: 16px;
 }
 @media screen and (min-width: 800px) {
   body {
@@ -98,11 +99,15 @@ p {
 @media screen and (min-width: 1024px) {
   .footer__section {
     display: flex;
-    justify-content: space-around;
   }
 }
 .footer__section li {
   margin-bottom: 3%;
+}
+@media screen and (min-width: 1024px) {
+  .footer__section li {
+    flex: 1;
+  }
 }
 .footer__section li a {
   color: #FFF;
@@ -115,6 +120,16 @@ p {
 
 .working {
   margin: 10% 3% 10% 3%;
+}
+@media screen and (min-width: 1024px) {
+  .working {
+    margin: 5% 3% 5% 5%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .working {
+    margin: 1% 3% 1% 3%;
+  }
 }
 .working__title {
   margin-bottom: 2%;
@@ -170,6 +185,9 @@ p {
 @media screen and (min-width: 1024px) {
   .step__numbers {
     margin: -0.5rem 0 0 0;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
   }
 }
 .step i {
@@ -204,11 +222,26 @@ p {
     padding: 5% 2% 5% 2%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 1% 2% 1% 2%;
+  }
+}
+.restaurants__title {
+  max-width: 1080px;
+  margin: auto;
+}
 @media screen and (min-width: 800px) {
   .restaurants__content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .restaurants__content {
+    max-width: 1080px;
+    margin: auto;
   }
 }
 .restaurants__card {
@@ -341,10 +374,12 @@ p {
   justify-content: space-between;
 }
 .entre__content__title {
-  width: 85%;
+  width: 90%;
 }
 .entre__content__prix {
   margin-top: 8%;
+  margin-right: -20%;
+  transition: transform 800ms ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
@@ -415,7 +450,7 @@ p {
 }
 .location i {
   margin-right: 1%;
-  margin-top: 1.7%;
+  margin-top: 2.5%;
   font-size: 120%;
 }
 
@@ -429,11 +464,21 @@ p {
     padding: 5% 0 5% 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  .info {
+    padding: 2% 0 3% 0;
+  }
+}
 .info__title {
   margin: 0;
 }
 .info__text {
   margin-bottom: 10%;
+}
+@media screen and (min-width: 1024px) {
+  .info__text {
+    margin-bottom: 3%;
+  }
 }
 .info__button {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -448,7 +493,7 @@ p {
 }
 
 .box {
-  width: 80px;
+  width: 70px;
   height: 100px;
   border-radius: 0 1rem 1rem 0;
   background-color: #99E2D0;
@@ -470,6 +515,9 @@ p {
 }
 .entre__content:focus .box i {
   transform: rotate(1turn);
+}
+.entre__content:focus .entre__content__prix {
+  transform: translate(-80px, 0);
 }
 
 .commande__buton {

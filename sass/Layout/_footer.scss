@@ -20,10 +20,12 @@
         list-style: none;
         @include laptop{
             display: flex;
-            justify-content: space-around;
         }
         & li {
             margin-bottom: 3%;
+            @include laptop{
+                flex: 1;
+            }
             & a {
                 color: #FFF;
                 text-decoration: none;

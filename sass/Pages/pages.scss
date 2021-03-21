@@ -4,11 +4,22 @@
     @include tablette-only {
         padding: 5% 2% 5% 2%;
     }
+    @include laptop{
+        padding: 1% 2% 1% 2%;
+    }
+    &__title {
+        max-width: 1080px;
+        margin: auto;
+    }
     &__content {
         @include tablette-only{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+        }
+        @include laptop{
+            max-width: 1080px;
+            margin: auto;
         }
     }
     &__card {
@@ -116,10 +127,12 @@
         &__content {
             @include card_menu ;
             &__title {
-                width: 85%;
+                width: 90%;
             }
             &__prix {
                 margin-top: 8%;
+                margin-right: -20%;
+                transition: transform 800ms ease-in-out;
             }
     }
 }
@@ -164,7 +177,7 @@
     border-top: #d5d5d5 3px solid;
     & i{
         margin-right: 1%;
-        margin-top: 1.7%;
+        margin-top: 2.5%;
         font-size: 120%;
     }
 }
@@ -175,11 +188,17 @@
     @include tablette-only {
         padding: 5% 0 5% 0;
     }
+    @include laptop{
+        padding: 2% 0 3% 0;
+    }
     &__title{
         margin: 0;
     }
     &__text{
         margin-bottom: 10%;
+        @include laptop{
+            margin-bottom: 3%;
+        }
     }
     &__button {
         @include bouton
@@ -190,7 +209,7 @@
 
 
 .box {
-    width: 80px;
+    width: 70px;
     height: 100px;
     border-radius: 0 1rem 1rem 0;
     background-color: $color-tertiary;
@@ -213,5 +232,8 @@
                 & i {
                     transform: rotate(1turn);
                 }
+        }
+        & .entre__content__prix {
+            transform: translate(-80px,0);
         }
 }

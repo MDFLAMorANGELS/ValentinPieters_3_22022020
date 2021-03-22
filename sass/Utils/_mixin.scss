@@ -27,7 +27,8 @@
         text-decoration: none;
         color: black;
         align-items: center;
-        justify-content: space-between
+        justify-content: space-between;
+        max-height: 100px;
 }
 
 @mixin tablette-only {
@@ -44,4 +45,11 @@
     @media screen and (min-width: map-get($breakpoints,desktop )){
         @content;
     }    
+}
+
+@mixin animation-transition {
+    animation: anim $anim-time ease-in-out;
+    transform-origin: bottom;
+    opacity: 0;
+    animation-fill-mode: both;
 }

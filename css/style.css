@@ -9,11 +9,6 @@ body {
   font-weight: 500;
   font-size: 16px;
 }
-@media screen and (min-width: 800px) {
-  body {
-    width: 100%;
-  }
-}
 
 .body__menu {
   background-color: #f2f2f2;
@@ -372,13 +367,14 @@ p {
   color: black;
   align-items: center;
   justify-content: space-between;
+  max-height: 100px;
 }
 .entre__content__title {
   width: 90%;
 }
 .entre__content__prix {
   margin-top: 8%;
-  margin-right: -20%;
+  margin-right: -10%;
   transition: transform 800ms ease-in-out;
 }
 
@@ -404,6 +400,7 @@ p {
   color: black;
   align-items: center;
   justify-content: space-between;
+  max-height: 100px;
 }
 .plat__content__title {
   width: 85%;
@@ -434,6 +431,7 @@ p {
   color: black;
   align-items: center;
   justify-content: space-between;
+  max-height: 100px;
 }
 .desserts__content__title {
   width: 85%;
@@ -492,6 +490,7 @@ p {
   font-weight: 600;
 }
 
+/** animation **/
 .box {
   width: 70px;
   height: 100px;
@@ -507,7 +506,7 @@ p {
 }
 .box i {
   color: #FFF;
-  transition: transform 900ms ease-in-out;
+  transition: transform 800ms ease-in-out;
 }
 
 .entre__content:focus .box {
@@ -520,6 +519,37 @@ p {
   transform: translate(-80px, 0);
 }
 
+.entre__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.entre__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.entre__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .commande__buton {
   background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 1px 5px black;

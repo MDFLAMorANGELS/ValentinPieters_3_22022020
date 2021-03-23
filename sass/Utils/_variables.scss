@@ -5,6 +5,8 @@ $color-background:#f2f2f2;
 $font-heading: shrikhand;
 $font-text:roboto;
 $anim-time:800ms;
+$color-primary-light:lighten($color-primary,25%);
+$color-secondary-light:lighten($color-secondary,15%);
 
 $breakpoints: (
     tablette: 800px,

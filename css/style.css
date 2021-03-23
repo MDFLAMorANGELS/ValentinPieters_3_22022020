@@ -497,7 +497,25 @@ p {
   font-weight: 600;
 }
 
-/** animation **/
+.commande__buton {
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 1px 5px black;
+  border: none;
+  border-radius: 10rem;
+  color: white;
+  padding: 18px 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  width: 60%;
+  margin: 10% 0% 0% 20%;
+}
+@media screen and (min-width: 1024px) {
+  .commande__buton {
+    margin: 15% 0 0 20%;
+  }
+}
+
 .box {
   width: 70px;
   height: 100px;
@@ -557,22 +575,65 @@ p {
     transform: translateY(0);
   }
 }
-.commande__buton {
-  background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 1px 5px black;
-  border: none;
-  border-radius: 10rem;
-  color: white;
-  padding: 18px 35px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  width: 60%;
-  margin: 10% 0% 0% 20%;
+.loading {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  max-height: 0;
+  animation: loader 2.5s linear;
 }
-@media screen and (min-width: 1024px) {
-  .commande__buton {
-    margin: 15% 0 0 20%;
+.loading__animation {
+  border-bottom: 15px solid #ffc6ef;
+  border-left: 5px dashed #FF79DA;
+  border-right: 5px dashed #9356DC;
+  border-top: 15px solid #d7c0f2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2.3s linear infinite;
+}
+.loading__animation i {
+  font-size: 100px;
+  color: #9356DC;
+  animation: icon 1.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    color: #FF79DA;
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0%, 90% {
+    height: 100vh;
+    max-height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
   }
 }
 

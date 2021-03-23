@@ -12,6 +12,9 @@ body {
 
 .body__menu {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 h2 {
@@ -69,6 +72,7 @@ p {
   background-color: #353535;
   color: white;
   padding: 8%;
+  margin-top: auto;
 }
 @media screen and (min-width: 1024px) {
   .footer {
@@ -371,6 +375,9 @@ p {
 }
 .entre__content__title {
   width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 800ms;
 }
 .entre__content__prix {
   margin-top: 8%;
@@ -515,8 +522,8 @@ p {
 .entre__content:focus .box i {
   transform: rotate(1turn);
 }
-.entre__content:focus .entre__content__prix {
-  transform: translate(-80px, 0);
+.entre__content:focus .entre__content__title {
+  width: calc(90% - 110px);
 }
 
 .entre__content.anim1 {
@@ -565,7 +572,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .commande__buton {
-    margin: 3% 0 0 20%;
+    margin: 15% 0 0 20%;
   }
 }
 

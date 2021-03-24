@@ -53,3 +53,16 @@
     opacity: 0;
     animation-fill-mode: both;
 }
+
+@mixin dish-title {
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition-duration:$anim-time;
+}
+
+@mixin dish-prix {
+    margin-top: 8%;
+    margin-right: -10%;
+    transition: transform 800ms ease-in-out;
+}

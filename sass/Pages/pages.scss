@@ -127,15 +127,10 @@
         &__content {
             @include card_menu ;
             &__title {
-                width: 90%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                transition-duration:$anim-time;
+              @include dish-title;
             }
             &__prix {
-                margin-top: 8%;
-                margin-right: -10%;
-                transition: transform 800ms ease-in-out;
+               @include dish-prix;
             }
     }
 }
@@ -149,10 +144,10 @@
         &__content {
             @include card_menu ;
             &__title {
-                width: 85%;
+                @include dish-title;
             }
         &__prix {
-            margin-top: 8%;
+            @include dish-prix;
         }
     }
 }
@@ -166,10 +161,10 @@
     &__content {
         @include card_menu ;
         &__title {
-            width: 85%;
+            @include dish-title;
         }
         &__prix {
-            margin-top: 8%;
+            @include dish-prix;
         }
     }
 }

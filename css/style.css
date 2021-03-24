@@ -410,10 +410,15 @@ p {
   max-height: 100px;
 }
 .plat__content__title {
-  width: 85%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 800ms;
 }
 .plat__content__prix {
   margin-top: 8%;
+  margin-right: -10%;
+  transition: transform 800ms ease-in-out;
 }
 
 @media screen and (min-width: 1024px) {
@@ -441,10 +446,15 @@ p {
   max-height: 100px;
 }
 .desserts__content__title {
-  width: 85%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition-duration: 800ms;
 }
 .desserts__content__prix {
   margin-top: 8%;
+  margin-right: -10%;
+  transition: transform 800ms ease-in-out;
 }
 
 .location {
@@ -558,6 +568,75 @@ p {
   animation-delay: 150ms;
 }
 .entre__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+.entre__content.anim4 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 450ms;
+}
+
+.plat__content:focus .box {
+  transform: scaleX(1);
+}
+.plat__content:focus .box i {
+  transform: rotate(1turn);
+}
+.plat__content:focus .plat__content__title {
+  width: calc(90% - 110px);
+}
+
+.plat__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.plat__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.plat__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+.desserts__content:focus .box {
+  transform: scaleX(1);
+}
+.desserts__content:focus .box i {
+  transform: rotate(1turn);
+}
+.desserts__content:focus .desserts__content__title {
+  width: calc(90% - 110px);
+}
+
+.desserts__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.desserts__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.desserts__content.anim3 {
   animation: anim 800ms ease-in-out;
   transform-origin: bottom;
   opacity: 0;

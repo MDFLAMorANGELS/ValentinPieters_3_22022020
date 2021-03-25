@@ -70,14 +70,6 @@
         &__location {
             margin: 0 0 10% 0;
         }
-        .like {
-            font-size: 20px;
-            margin-bottom: 5%;
-            & i {
-                color: black;
-
-            }
-        }
     }
     & a {
         text-decoration: none;
@@ -174,7 +166,6 @@
     justify-content: center;
     border-top: #d5d5d5 3px solid;
     & i{
-        margin-right: 1%;
         margin-top: 2.5%;
         font-size: 120%;
     }

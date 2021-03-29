@@ -120,6 +120,14 @@
             @include card_menu ;
             &__title {
               @include dish-title;
+              & p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            & h3 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             }
             &__prix {
                @include dish-prix;
@@ -137,6 +145,14 @@
             @include card_menu ;
             &__title {
                 @include dish-title;
+                & p{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & h3 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
         &__prix {
             @include dish-prix;
@@ -154,6 +170,14 @@
         @include card_menu ;
         &__title {
             @include dish-title;
+            & p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            & h3 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &__prix {
             @include dish-prix;

@@ -56,13 +56,27 @@
 
 @mixin dish-title {
     width: 90%;
-    overflow: hidden;
-    text-overflow: ellipsis;
     transition-duration:$anim-time;
+    white-space: nowrap;
 }
 
 @mixin dish-prix {
     margin-top: 8%;
     margin-right: -10%;
     transition: transform 800ms ease-in-out;
+}
+@mixin like-anim{
+    transform: scale(1);
+    transform: rotateY(360deg);
+    opacity: 1;
+}
+@mixin like-fas{
+    font-size: 35px;
+        position: absolute;
+        color: $color-primary;
+        transition: all 1.2s ease-in-out;
+        transform: scale(0);
+        transform: rotateY(90deg);
+        opacity: .5;
+        right: 0px;
 }

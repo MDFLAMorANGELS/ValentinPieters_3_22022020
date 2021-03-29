@@ -368,9 +368,16 @@ p {
 }
 .entre__content__title {
   width: 90%;
+  transition-duration: 800ms;
+  white-space: nowrap;
+}
+.entre__content__title p {
   overflow: hidden;
   text-overflow: ellipsis;
-  transition-duration: 800ms;
+}
+.entre__content__title h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .entre__content__prix {
   margin-top: 8%;
@@ -404,9 +411,16 @@ p {
 }
 .plat__content__title {
   width: 90%;
+  transition-duration: 800ms;
+  white-space: nowrap;
+}
+.plat__content__title p {
   overflow: hidden;
   text-overflow: ellipsis;
-  transition-duration: 800ms;
+}
+.plat__content__title h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plat__content__prix {
   margin-top: 8%;
@@ -440,9 +454,16 @@ p {
 }
 .desserts__content__title {
   width: 90%;
+  transition-duration: 800ms;
+  white-space: nowrap;
+}
+.desserts__content__title p {
   overflow: hidden;
   text-overflow: ellipsis;
-  transition-duration: 800ms;
+}
+.desserts__content__title h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .desserts__content__prix {
   margin-top: 8%;
@@ -536,13 +557,13 @@ p {
   transition: transform 800ms ease-in-out;
 }
 
-.entre__content:focus .box {
+.entre__content:hover .box {
   transform: scaleX(1);
 }
-.entre__content:focus .box i {
+.entre__content:hover .box i {
   transform: rotate(1turn);
 }
-.entre__content:focus .entre__content__title {
+.entre__content:hover .entre__content__title {
   width: calc(90% - 110px);
 }
 
@@ -574,13 +595,13 @@ p {
   animation-delay: 450ms;
 }
 
-.plat__content:focus .box {
+.plat__content:hover .box {
   transform: scaleX(1);
 }
-.plat__content:focus .box i {
+.plat__content:hover .box i {
   transform: rotate(1turn);
 }
-.plat__content:focus .plat__content__title {
+.plat__content:hover .plat__content__title {
   width: calc(90% - 110px);
 }
 
@@ -605,13 +626,13 @@ p {
   animation-delay: 300ms;
 }
 
-.desserts__content:focus .box {
+.desserts__content:hover .box {
   transform: scaleX(1);
 }
-.desserts__content:focus .box i {
+.desserts__content:hover .box i {
   transform: rotate(1turn);
 }
-.desserts__content:focus .desserts__content__title {
+.desserts__content:hover .desserts__content__title {
   width: calc(90% - 110px);
 }
 
@@ -720,18 +741,46 @@ p {
   position: relative;
 }
 .like .fas {
-  position: absolute;
-  font-size: 35px;
   right: 0px;
   bottom: 0px;
+  font-size: 35px;
+  position: absolute;
   color: #9356DC;
   transition: all 1.2s ease-in-out;
   transform: scale(0);
   transform: rotateY(90deg);
   opacity: 0.5;
+  right: 0px;
 }
 
-.like:focus .fas {
+.like:hover .fas {
+  transform: scale(1);
+  transform: rotateY(360deg);
+  opacity: 1;
+}
+
+.like__menu {
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+}
+.like__menu .far {
+  color: black;
+  font-size: 35px;
+  position: relative;
+}
+.like__menu .fas {
+  font-size: 35px;
+  position: absolute;
+  color: #9356DC;
+  transition: all 1.2s ease-in-out;
+  transform: scale(0);
+  transform: rotateY(90deg);
+  opacity: 0.5;
+  right: 0px;
+}
+
+.like__menu:hover .fas {
   transform: scale(1);
   transform: rotateY(360deg);
   opacity: 1;

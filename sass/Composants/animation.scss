@@ -16,7 +16,7 @@
     }
 }
 
-.entre__content:focus{
+.entre__content:hover{
         & .box{
                 transform: scaleX(1);
                 & i {
@@ -46,7 +46,7 @@
     }
 }
 
-.plat__content:focus{
+.plat__content:hover{
     & .box{
             transform: scaleX(1);
             & i {
@@ -72,7 +72,7 @@
     }
 }
 
-.desserts__content:focus{
+.desserts__content:hover{
     & .box{
             transform: scaleX(1);
             & i {
@@ -185,22 +185,33 @@
         position: relative;
     }
     & .fas{
-        position: absolute;
-        font-size: 35px;
         right: 0px;
         bottom: 0px;
-        color: $color-primary;
-        transition: all 1.2s ease-in-out;
-        transform: scale(0);
-        transform: rotateY(90deg);
-        opacity: .5;
+        @include like-fas
     }
 }
 
-.like:focus {
+.like:hover {
     & .fas{
-        transform: scale(1);
-        transform: rotateY(360deg);
-        opacity: 1;
+        @include like-anim
+    }
+}
+
+.like__menu{
+    font-size: 20px;
+    position: absolute;
+    right: 30px;
+    & .far{
+        color: black;
+        font-size: 35px;
+        position: relative;
+    }
+    & .fas{
+        @include like-fas
+    }
+}
+.like__menu:hover {
+    & .fas{
+        @include like-anim
     }
 }

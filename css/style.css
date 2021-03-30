@@ -745,7 +745,9 @@ p {
   bottom: 0px;
   font-size: 35px;
   position: absolute;
-  color: #9356DC;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 1.2s ease-in-out;
   transform: scale(0);
   transform: rotateY(90deg);
@@ -772,7 +774,9 @@ p {
 .like__menu .fas {
   font-size: 35px;
   position: absolute;
-  color: #9356DC;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 1.2s ease-in-out;
   transform: scale(0);
   transform: rotateY(90deg);

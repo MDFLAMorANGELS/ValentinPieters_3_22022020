@@ -539,6 +539,16 @@ p {
   }
 }
 
+button:hover {
+  opacity: 0.8;
+  transition: opacity 800ms ease;
+}
+
+button:not(:hover) {
+  opacity: 1;
+  transition: opacity 800ms ease;
+}
+
 .box {
   width: 70px;
   height: 100px;

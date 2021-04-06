@@ -1,3 +1,264 @@
+.box {
+  width: 70px;
+  height: 100px;
+  border-radius: 0 1rem 1rem 0;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 800ms ease-in-out;
+  position: relative;
+}
+.box i {
+  color: #FFF;
+  transition: transform 800ms ease-in-out;
+}
+
+.entre__content:hover .box {
+  transform: scaleX(1);
+}
+.entre__content:hover .box i {
+  transform: rotate(1turn);
+}
+.entre__content:hover .entre__content__title {
+  width: calc(90% - 110px);
+}
+
+.entre__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.entre__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.entre__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+.entre__content.anim4 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 450ms;
+}
+
+.plat__content:hover .box {
+  transform: scaleX(1);
+}
+.plat__content:hover .box i {
+  transform: rotate(1turn);
+}
+.plat__content:hover .plat__content__title {
+  width: calc(90% - 110px);
+}
+
+.plat__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.plat__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.plat__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+.desserts__content:hover .box {
+  transform: scaleX(1);
+}
+.desserts__content:hover .box i {
+  transform: rotate(1turn);
+}
+.desserts__content:hover .desserts__content__title {
+  width: calc(90% - 110px);
+}
+
+.desserts__content.anim1 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+.desserts__content.anim2 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 150ms;
+}
+.desserts__content.anim3 {
+  animation: anim 800ms ease-in-out;
+  transform-origin: bottom;
+  opacity: 0;
+  animation-fill-mode: both;
+  animation-delay: 300ms;
+}
+
+@keyframes anim {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.loading {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  max-height: 0;
+  animation: loader 2.5s linear;
+}
+.loading__animation {
+  border-bottom: 15px solid #ffc6ef;
+  border-left: 5px dashed #FF79DA;
+  border-right: 5px dashed #9356DC;
+  border-top: 15px solid #d7c0f2;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 2.3s linear infinite;
+}
+.loading__animation i {
+  font-size: 100px;
+  color: #9356DC;
+  animation: icon 1.8s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes icon {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    color: #FF79DA;
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0%, 90% {
+    height: 100vh;
+    max-height: 100vh;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+.like {
+  font-size: 20px;
+  margin-bottom: 5%;
+  position: absolute;
+  right: 25px;
+  bottom: 5px;
+}
+.like .far {
+  color: black;
+  font-size: 35px;
+  position: relative;
+}
+.like .fas {
+  right: 0px;
+  bottom: 0px;
+  font-size: 35px;
+  position: absolute;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1.2s ease-in-out;
+  transform: scale(0);
+  transform: rotateY(90deg);
+  opacity: 0.5;
+  right: 0px;
+}
+
+.like:hover .fas {
+  transform: scale(1);
+  transform: rotateY(360deg);
+  opacity: 1;
+}
+
+.like__menu {
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+}
+.like__menu .far {
+  color: black;
+  font-size: 35px;
+  position: relative;
+}
+.like__menu .fas {
+  font-size: 35px;
+  position: absolute;
+  background: linear-gradient(90deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1.2s ease-in-out;
+  transform: scale(0);
+  transform: rotateY(90deg);
+  opacity: 0.5;
+  right: 0px;
+}
+
+.like__menu:hover .fas {
+  transform: scale(1);
+  transform: rotateY(360deg);
+  opacity: 1;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: opacity 800ms ease;
+}
+
+button:not(:hover) {
+  opacity: 1;
+  transition: opacity 800ms ease;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -537,267 +798,6 @@ p {
   .commande__buton {
     margin: 15% 0 0 20%;
   }
-}
-
-button:hover {
-  opacity: 0.8;
-  transition: opacity 800ms ease;
-}
-
-button:not(:hover) {
-  opacity: 1;
-  transition: opacity 800ms ease;
-}
-
-.box {
-  width: 70px;
-  height: 100px;
-  border-radius: 0 1rem 1rem 0;
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 800ms ease-in-out;
-  position: relative;
-}
-.box i {
-  color: #FFF;
-  transition: transform 800ms ease-in-out;
-}
-
-.entre__content:hover .box {
-  transform: scaleX(1);
-}
-.entre__content:hover .box i {
-  transform: rotate(1turn);
-}
-.entre__content:hover .entre__content__title {
-  width: calc(90% - 110px);
-}
-
-.entre__content.anim1 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-}
-.entre__content.anim2 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 150ms;
-}
-.entre__content.anim3 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 300ms;
-}
-.entre__content.anim4 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 450ms;
-}
-
-.plat__content:hover .box {
-  transform: scaleX(1);
-}
-.plat__content:hover .box i {
-  transform: rotate(1turn);
-}
-.plat__content:hover .plat__content__title {
-  width: calc(90% - 110px);
-}
-
-.plat__content.anim1 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-}
-.plat__content.anim2 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 150ms;
-}
-.plat__content.anim3 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 300ms;
-}
-
-.desserts__content:hover .box {
-  transform: scaleX(1);
-}
-.desserts__content:hover .box i {
-  transform: rotate(1turn);
-}
-.desserts__content:hover .desserts__content__title {
-  width: calc(90% - 110px);
-}
-
-.desserts__content.anim1 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-}
-.desserts__content.anim2 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 150ms;
-}
-.desserts__content.anim3 {
-  animation: anim 800ms ease-in-out;
-  transform-origin: bottom;
-  opacity: 0;
-  animation-fill-mode: both;
-  animation-delay: 300ms;
-}
-
-@keyframes anim {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.loading {
-  position: fixed;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: #FFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  max-height: 0;
-  animation: loader 2.5s linear;
-}
-.loading__animation {
-  border-bottom: 15px solid #ffc6ef;
-  border-left: 5px dashed #FF79DA;
-  border-right: 5px dashed #9356DC;
-  border-top: 15px solid #d7c0f2;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: spin 2.3s linear infinite;
-}
-.loading__animation i {
-  font-size: 100px;
-  color: #9356DC;
-  animation: icon 1.8s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes icon {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    color: #FF79DA;
-    transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes loader {
-  0%, 90% {
-    height: 100vh;
-    max-height: 100vh;
-    opacity: 1;
-  }
-  100% {
-    height: 0;
-    opacity: 0;
-  }
-}
-.like {
-  font-size: 20px;
-  margin-bottom: 5%;
-  position: absolute;
-  right: 25px;
-  bottom: 5px;
-}
-.like .far {
-  color: black;
-  font-size: 35px;
-  position: relative;
-}
-.like .fas {
-  right: 0px;
-  bottom: 0px;
-  font-size: 35px;
-  position: absolute;
-  background: linear-gradient(90deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 1.2s ease-in-out;
-  transform: scale(0);
-  transform: rotateY(90deg);
-  opacity: 0.5;
-  right: 0px;
-}
-
-.like:hover .fas {
-  transform: scale(1);
-  transform: rotateY(360deg);
-  opacity: 1;
-}
-
-.like__menu {
-  font-size: 20px;
-  position: absolute;
-  right: 30px;
-}
-.like__menu .far {
-  color: black;
-  font-size: 35px;
-  position: relative;
-}
-.like__menu .fas {
-  font-size: 35px;
-  position: absolute;
-  background: linear-gradient(90deg, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 1.2s ease-in-out;
-  transform: scale(0);
-  transform: rotateY(90deg);
-  opacity: 0.5;
-  right: 0px;
-}
-
-.like__menu:hover .fas {
-  transform: scale(1);
-  transform: rotateY(360deg);
-  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

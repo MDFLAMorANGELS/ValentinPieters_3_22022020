@@ -6,11 +6,3 @@
         margin: 15% 0 0 20%;
     }
 }
-button:hover {
-    opacity: 0.8;
-    transition: opacity $anim-time ease;
-}
-button:not(:hover) {
-    opacity: 1;
-    transition: opacity $anim-time ease;
-}

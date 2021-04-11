@@ -288,7 +288,13 @@ h3 {
   font-size: 1.1em;
 }
 
-p {
+h4 {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 3%;
+}
+
+h5 {
   font-weight: 300;
   font-size: 1.2em;
   margin: 3%;
